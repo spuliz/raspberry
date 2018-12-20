@@ -2,7 +2,7 @@ package ee402;
 
 import java.io.*;
 
-public class readTemp {
+public class GetTemperatureService {
     public static void main(String [] args) {
 
         String fileName = "/sys/class/thermal/thermal_zone0/temp";
