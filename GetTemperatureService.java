@@ -16,11 +16,11 @@ public class GetTemperatureService {
             if (args[0].equalsIgnoreCase("On") || 
                             args[0].equalsIgnoreCase("Off")){
                 BufferedWriter bw = new BufferedWriter ( 
-                        new FileWriter (TEMP0_PATH+"/trigger"));
+                        new FileWriter (TEMP0_PATH));
                 bw.write("none");
                 bw.close();
                 bw = new BufferedWriter ( 
-                        new FileWriter (TEMP0_PATH+"/brightness"));
+                        new FileWriter (TEMP0_PATH));
                 bw.write(args[0].equalsIgnoreCase("On")? "1":"0");
                 bw.close();
             }
